@@ -1,0 +1,25 @@
+{% load static %}
+<head>
+    <title>DRF Assignment</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}"/>
+</head>
+<h1><span>DRF</span> Assignment</h1>
+
+<!-- Flex Container -->
+<div id="container">
+    <div class="button" id="button-3">
+        <div id="circle"></div>
+        <a href="/api">API Viewsets</a>
+    </div>
+    <div class="button" id="button-3">
+        <div id="circle"></div>
+        <a href="{% url 'stats' %}">API/Stats</a>
+    </div>
+    <div class="button" id="button-3">
+        <div id="circle"></div>
+        <a href="{% url 'swagger-ui' %}">Swagger</a>
+    </div>
+
+
+    <!-- End Container -->
+</div>
